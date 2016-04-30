@@ -1,10 +1,9 @@
 
-var width = 720,
-    height = 720,
+var width = 920,
+    height = 920,
     outerRadius = Math.min(width, height) / 2 - 10,
     innerRadius = outerRadius - 24;
 
-var formatPercent = d3.format(".1%");
 
 var arc = d3.svg.arc()
     .innerRadius(innerRadius)
@@ -48,7 +47,7 @@ function ready(error, cities, matrix) {
 
     // Add a mouseover title.
     group.append("title").text(function(d, i) {
-        return cities[i].name + ": " + formatPercent(d.value) + " of origins";
+        return cities[i].name + ": " + d.value + " of origins";
     });
 
     // Add the group arc.
@@ -82,10 +81,10 @@ function ready(error, cities, matrix) {
     chord.append("title").text(function(d) {
         return cities[d.source.index].name
             + " → " + cities[d.target.index].name
-            + ": " + formatPercent(d.source.value)
+            + ": " + d.source.value
             + "\n" + cities[d.target.index].name
             + " → " + cities[d.source.index].name
-            + ": " + formatPercent(d.target.value);
+            + ": " + d.target.value;
     });
 
     function mouseover(d, i) {
