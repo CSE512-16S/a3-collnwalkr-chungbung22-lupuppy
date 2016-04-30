@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html class="ocks-org do-not-copy">
-<meta charset="utf-8">
-<title>Population Migration from State to State</title>
-<link href="css/style_main.css" rel="stylesheet">
-<style>
+<head>
+  <meta charset="utf-8">
+  <title>Population Migration from State to State</title>
+  <link href="css/style_main.css" rel="stylesheet">
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="//d3js.org/queue.v1.min.js"></script>
+</head>
 
-#circle circle {
-  fill: none;
-  pointer-events: all;
-}
+<body>
 
-.group path {
-  fill-opacity: .5;
-}
+  <style>
+    #circle circle {
+      fill: none;
+      pointer-events: all;
+    }
 
-path.chord {
-  stroke: #fff;
-  stroke-width: .1px;
-}
+    .group path {
+      fill-opacity: .5;
+    }
 
-#circle:hover path.fade {
-  display: none;
-}
+    path.chord {
+      stroke: #fff;
+      stroke-width: .1px;
+    }
 
-</style>
-
-<h1>Population Migration from State to State</h1>
-
-<aside>Mouseover to focus on the number of people moving from one state to another.
-
-<p>The thickness of links between states encodes the relative frequency of moves between two states: thicker links represent more people moving. 
-
-<p>Links are directed: for example, while 2.2% of rides go from South of Market to Downtown, only 1.2% go in the opposite direction. Links are colored by the more frequent origin.
+    #circle:hover path.fade {
+      display: none;
+    }
+  </style>
 
 
-<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="//d3js.org/queue.v1.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+
+  <h1>Population Migration from State to State</h1>
+
+<aside>Mouseover to focus on the number of people moving from one state to another.</aside>
+
+  <script type="text/javascript" src="js/script.js"></script>
 
 <footer>
 
 </footer>
 
+</body>
+</html>

@@ -29,7 +29,7 @@ svg.append("circle")
     .attr("r", outerRadius);
 
 queue()
-    .defer(d3.csv, "cities.csv")
+    .defer(d3.csv, "states.csv")
     .defer(d3.json, "matrix.json")
     .await(ready);
 
