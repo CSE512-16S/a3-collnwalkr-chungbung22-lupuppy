@@ -1,6 +1,6 @@
 
-var width = 920,
-    height = 920,
+var width = 800,
+    height = 800,
     outerRadius = Math.min(width, height) / 2 - 10,
     innerRadius = outerRadius - 24;
 
@@ -28,7 +28,7 @@ svg.append("circle")
     .attr("r", outerRadius);
 
 queue()
-    .defer(d3.csv, "cities.csv")
+    .defer(d3.csv, "states.csv")
     .defer(d3.json, "matrix.json")
     .await(ready);
 

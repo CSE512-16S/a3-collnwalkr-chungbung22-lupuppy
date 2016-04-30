@@ -1,0 +1,52 @@
+name,color,region
+Alabama,#d7191c,southeast
+Alaska,#fdae61,west
+Arizona,#abd9e9,southwest
+Arkansas,#d7191c,southeast
+California,#fdae61,west
+Colorado,#fdae61,west
+Connecticut,#2c7bb6,northeast
+Delaware,#2c7bb6,northeast
+District of Columbia,#2c7bb6,northeast
+Florida,#d7191c,southeast
+Georgia,#d7191c,southeast
+Hawaii,#fdae61,west
+Idaho,#fdae61,west
+Illinois,#ffffbf,midwest
+Indiana,#ffffbf,midwest
+Iowa,#ffffbf,midwest
+Kansas,#ffffbf,midwest
+Kentucky,#d7191c,southeast
+Louisiana,#d7191c,southeast
+Maine,#2c7bb6,northeast
+Maryland,#2c7bb6,northeast
+Massachusetts,#2c7bb6,northeast
+Michigan,#ffffbf,midwest
+Minnesota,#ffffbf,midwest
+Mississippi,#d7191c,southeast
+Missouri,#ffffbf,midwest
+Montana,#fdae61,west
+Nebraska,#ffffbf,midwest
+Nevada,#fdae61,west
+New Hampshire,#2c7bb6,northeast
+New Jersey,#2c7bb6,northeast
+New Mexico,#abd9e9,southwest
+New York,#2c7bb6,northeast
+North Carolina,#d7191c,southeast
+North Dakota,#ffffbf,midwest
+Ohio,#ffffbf,midwest
+Oklahoma,#abd9e9,southwest
+Oregon,#fdae61,west
+Pennsylvania,#2c7bb6,northeast
+Rhode Island,#2c7bb6,northeast
+South Carolina,#d7191c,southeast
+South Dakota,#ffffbf,midwest
+Tennessee,#d7191c,southeast
+Texas,#abd9e9,southwest
+Utah,#fdae61,west
+Vermont,#2c7bb6,northeast
+Virginia,#d7191c,southeast
+Washington,#fdae61,west
+West Virginia,#d7191c,southeast
+Wisconsin,#ffffbf,midwest
+Wyoming,#fdae61,west
