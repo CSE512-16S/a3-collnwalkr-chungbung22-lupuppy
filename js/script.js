@@ -47,6 +47,7 @@ function ready(error, cities, matrix) {
 
     // Add a mouseover title.
     group.append("title").text(function(d, i) {
+        console.log(i);
         return cities[i].name + ": " + d.value + " of origins";
     });
 
