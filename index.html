@@ -15,7 +15,7 @@
 }
 
 path.chord {
-  stroke: #000;
+  stroke: #fff;
   stroke-width: .1px;
 }
 
@@ -27,11 +27,12 @@ path.chord {
 
 <h1>Population Migration from State to State</h1>
 
-<aside>Mouseover to focus on rides to or from a single neighbor&shy;hood.
+<aside>Mouseover to focus on the number of people moving from one state to another.
 
+<p>The thickness of links between states encodes the relative frequency of moves between two states: thicker links represent more people moving. 
 
+<p>Links are directed: for example, while 2.2% of rides go from South of Market to Downtown, only 1.2% go in the opposite direction. Links are colored by the more frequent origin.
 
-<p>Built with <a href="http://d3js.org/">D3</a>.</aside>
 
 <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="//d3js.org/queue.v1.min.js"></script>
