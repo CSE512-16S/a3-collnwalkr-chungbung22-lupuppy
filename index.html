@@ -17,7 +17,7 @@
     }
 
     .group path {
-      fill-opacity: .5;
+      fill-opacity: 1;
     }
 
     path.chord {
@@ -34,8 +34,23 @@
 
   <h1>Population Migration from State to State</h1>
 
-<aside>Mouseover to focus on the number of people moving from one state to another.</aside>
+<aside>Mouseover to focus on the number of people moving from one state to another.
 
+<p>The thickness of links between states encodes the relative frequency of moves between two states: thicker links represent more people moving. 
+
+<p>Links are directed: for example, while 2.2% of rides go from South of Market to Downtown, only 1.2% go in the opposite direction. Links are colored by the more frequent origin.
+
+<br>
+<br>
+<br>
+<p>Legend:</p>
+<ul class="legend">
+    <li><span class="northeast"></span> Northeast</li>
+    <li><span class="southeast"></span> Southeast</li>
+    <li><span class="southwest"></span> Southwest</li>
+    <li><span class="west"></span> West</li>
+	<li><span class="midwest"></span> Midwest</li>
+</ul>
   <script type="text/javascript" src="js/script.js"></script>
 
 <footer>
