@@ -33,7 +33,7 @@ queue()
     .defer(d3.json, "matrix.json")
     .await(ready);
 
-function ready(error, cities, matrix) {
+function ready(error, states, matrix) {
   if (error) throw error;
 
   // Compute the chord layout.
@@ -48,14 +48,16 @@ function ready(error, cities, matrix) {
 
   // Add a mouseover title.
   group.append("title").text(function(d, i) {
-    return cities[i].name + ":" + "\n"  + format(d.value) + " people leaving" + "\n" + cities[i].population+" residents";
+    return states[i].name + ":" + "\n"  + format(d.value) + " people leaving" + "\n" + states[i].population+" residents";
   });
 
   // Add the group arc.
   var groupPath = group.append("path")
       .attr("id", function(d, i) { return "group" + i; })
       .attr("d", arc)
-      .style("fill", function(d, i) { return cities[i].color; });
+      .style("fill", function(d, i) { return states[i].color; });
+
+    console.log(groupPath);
 
   // Add a text label.
   group.append("text")
@@ -68,23 +70,23 @@ function ready(error, cities, matrix) {
         + (d.angle > Math.PI ? "rotate(180)" : "");
   })
   .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
-  .text(function(d, i) { return cities[i].name; });
+  .text(function(d, i) { return states[i].name; });
 
   // Add the chords.
   var chord = svg.selectAll(".chord")
       .data(layout.chords)
     .enter().append("path")
       .attr("class", "chord")
-      .style("fill", function(d) { return cities[d.source.index].color; })
+      .style("fill", function(d) { return states[d.source.index].color; })
       .attr("d", path);
 
   // Add an elaborate mouseover title for each chord.
   chord.append("title").text(function(d) {
-    return cities[d.source.index].name
-        + " → " + cities[d.target.index].name
+    return states[d.source.index].name
+        + " → " + states[d.target.index].name
         + ": " + format(d.source.value) + " people"
-        + "\n" + cities[d.target.index].name
-        + " → " + cities[d.source.index].name
+        + "\n" + states[d.target.index].name
+        + " → " + states[d.source.index].name
         + ": " + format(d.target.value) + "people";
   });
 
