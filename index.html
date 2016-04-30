@@ -42,8 +42,8 @@ path.chord {
 
 <p>Built with <a href="http://d3js.org/">D3</a>.</aside>
 
-<script type="text/javascript" src="d3/d3.js"></script>
-<script type="text/javascript" src="d3/d3-queue.js"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="//d3js.org/queue.v1.min.js"></script>
 <script>
 
 var width = 720,
@@ -145,25 +145,5 @@ function ready(error, cities, matrix) {
 
 </script>
 
-<p class="attribution">Source: <a href="http://blog.uber.com/2012/01/09/uberdata-san-franciscomics/">Uber Blog</a>.
-
-<p>I enjoyed <a href="http://blog.uber.com/2012/01/09/uberdata-san-franciscomics/">Bradley Voytek’s post</a> today analyzing the frequency of rides between various neighborhoods in San Francisco. However, I wondered if an alternative network visualization might better reveal patterns or anomalies in the data. Complex networks (a.k.a. “hairballs”) are hard to visualize well!
-
-<p>This dataset is particularly interesting because it has directed edges. For example, there are twice as many rides from South of Market to Downtown than in the opposite direction. You can’t see directionality in the original visualization because only a single edge is drawn between each node. (Or perhaps  the smaller edge is occluded by the larger one.)
-
-<p>Some alternatives I considered:
-
-<p>A <a href="http://mbostock.github.com/protovis/ex/matrix.html">matrix diagram</a> visualizes the <i>adjacency matrix</i> of the network by showing a two-dimensional grid; each cell in the grid encodes the relative frequency of rides from neighborhood <i>i</i> to neighborhood <i>j</i>. These are great for finding clusters (with appropriate sorting) and central components, and for looking at individual connections. Unlike a node-link diagram, though, you can’t use geography for positioning.
-
-<p>A <a href="http://mbostock.github.com/d3/ex/chord.html">chord diagram</a> arranges the nodes (neighborhoods) radially, drawing thick curves between nodes. The thickness of the curve encodes the frequency of rides between two neighborhoods. Like matrix diagrams, chord diagrams reveal asymmetries: if a chord is tapered, there are more rides <i>from</i> a given neighborhood than <i>to</i> it. The above chord diagram might be better reordered to correspond with geography.
-
-<p>If I had more time, I might also take a look at <a href="http://www.hiveplot.net/">hive plots</a>, which are a bit like radial <a href="//bl.ocks.org/1341281">parallel coordinates</a>. I’m not sure what axes I’d use for this dataset, though.
-
-<p style="margin-top:4em;">Caveats: I am not affiliated with Uber. I do not have access to source data, so my transcription may be inaccurate. This page merely serves to illustrate different types of network visualizations.
-
-<footer>
-  <aside>January 9, 2012</aside>
-  <a href="../" rel="author">Mike Bostock</a>
-</footer>
 
 
