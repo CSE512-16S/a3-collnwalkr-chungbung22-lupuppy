@@ -115,5 +115,7 @@
 
   exports.version = version;
   exports.queue = queue;
+  console.log('hi');
+  console.log(queue);
 
 }));
