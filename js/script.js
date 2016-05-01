@@ -1,9 +1,9 @@
 format = d3.format(',');
 
-var width = 720,
-    height = 720,
+var width = 800,
+    height = 800,
     outerRadius = Math.min(width, height) / 2 - 70,
-    innerRadius = outerRadius - 24;
+    innerRadius = outerRadius - 18;
 
 
 var arc = d3.svg.arc()
@@ -11,7 +11,7 @@ var arc = d3.svg.arc()
     .outerRadius(outerRadius);
 
 var layout = d3.layout.chord()
-    .padding(.04)
+    .padding(.01)
     .sortSubgroups(d3.descending)
     .sortChords(d3.ascending);
 
@@ -39,7 +39,7 @@ function ready(error, states, matrix) {
   // Compute the chord layout.
   layout.matrix(matrix);
 
-  // Add a group per neighborhood.
+  // Add a group per state.
   var group = svg.selectAll(".group")
       .data(layout.groups)
     .enter().append("g")
@@ -48,7 +48,7 @@ function ready(error, states, matrix) {
 
   // Add a mouseover title.
   group.append("title").text(function(d, i) {
-    return states[i].name + ":" + "\n"  + format(d.value) + " people leaving" + "\n" + states[i].population+" residents";
+    return states[i].name + ":" + "\n"  + format(d.value) + " people left" + "\n" + states[i].population+" residents";
   });
 
   // Add the group arc.
@@ -56,8 +56,6 @@ function ready(error, states, matrix) {
       .attr("id", function(d, i) { return "group" + i; })
       .attr("d", arc)
       .style("fill", function(d, i) { return states[i].color; });
-
-    console.log(groupPath);
 
   // Add a text label.
   group.append("text")
@@ -76,9 +74,10 @@ function ready(error, states, matrix) {
   var chord = svg.selectAll(".chord")
       .data(layout.chords)
     .enter().append("path")
-      .attr("class", "chord")
+      .attr("class", function(d) { return states[d.source.index].region; })
       .style("fill", function(d) { return states[d.source.index].color; })
       .attr("d", path);
+
 
   // Add an elaborate mouseover title for each chord.
   chord.append("title").text(function(d) {
@@ -87,8 +86,9 @@ function ready(error, states, matrix) {
         + ": " + format(d.source.value) + " people"
         + "\n" + states[d.target.index].name
         + " → " + states[d.source.index].name
-        + ": " + format(d.target.value) + "people";
+        + ": " + format(d.target.value) + " people";
   });
+
 
   function mouseover(d, i) {
     chord.classed("fade", function(p) {
@@ -96,4 +96,63 @@ function ready(error, states, matrix) {
           && p.target.index != i;
     });
   }
+
+
+    var southwest = svg.selectAll(".southwest");
+    var southeast = svg.selectAll(".southeast");
+    var northeast = svg.selectAll(".northeast");
+    var midwest = svg.selectAll(".midwest");
+    var west = svg.selectAll(".west");
+
+    var regions = {
+        southwest: southwest,
+        northeast: northeast,
+        midwest:   midwest,
+        southeast: southeast,
+        west:      west
+    };
+
+    var midwest_legend = document.getElementById("midwest");
+    var northeast_legend = document.getElementById("northeast");
+    var southeast_legend = document.getElementById("southeast");
+    var southwest_legend = document.getElementById("southwest");
+    var west_legend = document.getElementById("west");
+
+    midwest_legend.addEventListener("mouseover", fadeRegion, false);
+    northeast_legend.addEventListener("mouseover", fadeRegion, false);
+    southeast_legend.addEventListener("mouseover", fadeRegion, false);
+    southwest_legend.addEventListener("mouseover", fadeRegion, false);
+    west_legend.addEventListener("mouseover", fadeRegion, false);
+
+    midwest_legend.addEventListener("mouseout", mouseOut, false);
+    northeast_legend.addEventListener("mouseout", mouseOut, false);
+    southeast_legend.addEventListener("mouseout", mouseOut, false);
+    southwest_legend.addEventListener("mouseout", mouseOut, false);
+    west_legend.addEventListener("mouseout", mouseOut, false);
+
+
+    function fadeRegion(e) {
+        var region_hover = e.toElement.id;
+        if(!region_hover){
+            region_hover = e.toElement.className;
+        }
+        for(var item in regions){
+            if(item !== region_hover){
+                regions[item].attr('opacity',0);
+            }
+        }
+    }
+
+    function mouseOut(e){
+        var region_hover = e.fromElement.id;
+        if(!region_hover){
+            region_hover = e.fromElement.className;
+        }
+        for(var item in regions){
+            if(item !== region_hover){
+                regions[item].attr('opacity',1);
+            }
+        }
+
+    }
 }

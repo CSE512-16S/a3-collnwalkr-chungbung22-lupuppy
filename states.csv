@@ -1,52 +1,52 @@
 name,color,population,region
-Alabama,#d7191c,"4,791,931",southeast
-Alaska,#fdae61,"725,206",west
-Arizona,#abd9e9,"6,651,964",southwest
-Arkansas,#d7191c,"2,931,123",southeast
-California,#fdae61,"38,340,324",west
-Colorado,#fdae61,"5,293,943",west
-Connecticut,#2c7bb6,"3,558,915",northeast
-Delaware,#2c7bb6,"924,770",northeast
-District of Columbia ,#2c7bb6,"648,586",northeast
-Florida,#d7191c,"19,683,763",southeast
-Georgia,#d7191c,"9,970,167",southeast
-Hawaii,#fdae61,"1,401,004",west
-Idaho,#fdae61,"1,613,068",west
 Illinois,#ffffbf,"12,730,206",midwest
 Indiana,#ffffbf,"6,516,181",midwest
 Iowa,#ffffbf,"3,067,872",midwest
 Kansas,#ffffbf,"2,866,584",midwest
-Kentucky,#d7191c,"4,357,819",southeast
-Louisiana,#d7191c,"4,593,505",southeast
+Michigan,#ffffbf,"9,795,659",midwest
+Minnesota,#ffffbf,"5,385,219",midwest
+Missouri,#ffffbf,"5,992,195",midwest
+Nebraska,#ffffbf,"1,855,356",midwest
+North Dakota,#ffffbf,"729,874",midwest
+Ohio,#ffffbf,"11,464,891",midwest
+South Dakota,#ffffbf,"842,076",midwest
+Wisconsin,#ffffbf,"5,692,727",midwest
+Connecticut,#2c7bb6,"3,558,915",northeast
+Delaware,#2c7bb6,"924,770",northeast
+D.C. ,#2c7bb6,"648,586",northeast
 Maine,#2c7bb6,"1,317,638",northeast
 Maryland,#2c7bb6,"5,911,235",northeast
 Massachusetts,#2c7bb6,"6,674,907",northeast
-Michigan,#ffffbf,"9,795,659",midwest
-Minnesota,#ffffbf,"5,385,219",midwest
-Mississippi,#d7191c,"2,957,658",southeast
-Missouri,#ffffbf,"5,992,195",midwest
-Montana,#fdae61,"1,012,169",west
-Nebraska,#ffffbf,"1,855,356",midwest
-Nevada,#fdae61,"2,806,170",west
 New Hampshire,#2c7bb6,"1,314,735",northeast
 New Jersey,#2c7bb6,"8,840,346",northeast
-New Mexico,#abd9e9,"2,060,189",southwest
 New York,#2c7bb6,"19,528,220",northeast
-North Carolina,#d7191c,"9,832,152",southeast
-North Dakota,#ffffbf,"729,874",midwest
-Ohio,#ffffbf,"11,464,891",midwest
-Oklahoma,#abd9e9,"3,827,288",southwest
-Oregon,#fdae61,"3,927,857",west
 Pennsylvania,#2c7bb6,"12,645,888",northeast
 Rhode Island,#2c7bb6,"1,045,791",northeast
-South Carolina,#d7191c,"4,780,659",southeast
-South Dakota,#ffffbf,"842,076",midwest
-Tennessee,#d7191c,"6,471,445",southeast
-Texas,#abd9e9,"26,588,600",southwest
-Utah,#fdae61,"2,894,001",west
 Vermont,#2c7bb6,"620,898",northeast
+Alabama,#d7191c,"4,791,931",southeast
+Arkansas,#d7191c,"2,931,123",southeast
+Florida,#d7191c,"19,683,763",southeast
+Georgia,#d7191c,"9,970,167",southeast
+Kentucky,#d7191c,"4,357,819",southeast
+Louisiana,#d7191c,"4,593,505",southeast
+Mississippi,#d7191c,"2,957,658",southeast
+North Carolina,#d7191c,"9,832,152",southeast
+South Carolina,#d7191c,"4,780,659",southeast
+Tennessee,#d7191c,"6,471,445",southeast
 Virginia,#d7191c,"8,224,054",southeast
-Washington,#fdae61,"6,979,369",west
 West Virginia,#d7191c,"1,831,414",southeast
-Wisconsin,#ffffbf,"5,692,727",midwest
+Arizona,#abd9e9,"6,651,964",southwest
+New Mexico,#abd9e9,"2,060,189",southwest
+Oklahoma,#abd9e9,"3,827,288",southwest
+Texas,#abd9e9,"26,588,600",southwest
+Alaska,#fdae61,"725,206",west
+California,#fdae61,"38,340,324",west
+Colorado,#fdae61,"5,293,943",west
+Hawaii,#fdae61,"1,401,004",west
+Idaho,#fdae61,"1,613,068",west
+Montana,#fdae61,"1,012,169",west
+Nevada,#fdae61,"2,806,170",west
+Oregon,#fdae61,"3,927,857",west
+Utah,#fdae61,"2,894,001",west
+Washington,#fdae61,"6,979,369",west
 Wyoming,#fdae61,"577,782",west
