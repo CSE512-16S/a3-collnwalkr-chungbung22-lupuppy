@@ -21,7 +21,6 @@ Access our visualization at http://cse512-16s.github.io/a3-collnwalkr-chungbung2
 
 ## Story Board
 
-Put either your storyboard content or a [link to your storyboard pdf file](storyboard.pdf?raw=true) here. Just like A2, you can use any software to create a *reasonable* pdf storyboard.
 We Started off sketching key concepts on paper:
 
 [data viz.pdf](https://github.com/CSE512-16S/a3-collnwalkr-chungbung22-lupuppy/files/245907/data.viz.pdf)
