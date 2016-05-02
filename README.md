@@ -10,6 +10,8 @@
 
 ## Project Name - Population Migration from State to State 2014-2015
 
+(Put your a brief description of your final interactive visualization application and your dataset here.)
+
 We chose the state to state migration flows as our source data. The data is fairly simple: For each state, it shows how many people moved out of that state after a year. We decided to use chord graph for three reasons: first, chord graph visualize interactions among states within a complicated network(there are fifty states we need to visualize); second, chord graph is an effective way to visualize the size of the population; finally, chord graph can express a large amount of information within a condensed visualization (less data ink).  
 
 Then, using existing Chord map example, we sketched out key aspects of our visualization on paper.
