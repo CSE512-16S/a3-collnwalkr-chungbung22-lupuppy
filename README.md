@@ -10,13 +10,14 @@
 
 ## Project Name - Population Outflow from State to State 2014-2015
 
-(Put your a brief description of your final interactive visualization application and your dataset here.)
+We spent a lot of time trying to decide on which dataset to visualize. Originally we were planning to do a financial fraud dataset, but had trouble coming up with a meaningful visualization. We ultimately chose state to state migration flows as our source dataset. The dataset was small enough that we could effectively and efficiently clean the dataset to suit our needs, but not so large that it would obscure relevant information. 
 
-We chose the state to state migration flows as our source data. The data is fairly simple: For each state, it shows how many people moved out of that state after a year. We decided to use chord graph for three reasons: first, chord graph visualize interactions among states within a complicated network(there are fifty states we need to visualize); second, chord graph is an effective way to visualize the size of the population; finally, chord graph can express a large amount of information within a condensed visualization (less data ink).  
+For each state, we chose to show how many people moved out of that state after a year. We decided to use chord graph for three reasons: first, chord graph visualize interactions among states within a complicated network(there are fifty states we need to visualize); second, chord graph is an effective way to visualize the size of the population; finally, chord graph can express a large amount of information within a condensed visualization (less data ink).  
 
-Then, using existing Chord map example, we sketched out key aspects of our visualization on paper.
+Using the existing Chord map example on D3 for reference, we sketched out key aspects of our visualization on paper. Then we began implementing the code. We chose to encode the relative frequency of moves between states using the thickness of links between states, where thicker links represent more people moving. Due to the large number of nodes in the diagram (50 states), we chose to merge the outgoing and incoming paths into one path, since otherwise, there would be twice as many paths. As a result the thickness from outgoing and incoming paths are mapped onto the same path, but are encoded with a change in path width, where the path connects to the state. Paths and states were then color coded by region, which can also be viewed by hovering over the legend. Finally, toolips were added to show the movement of people between two states along a path, as well as the total number of people leaving a state  and its current residents along each state label.
 
 ## Running Instructions
+
 Access our visualization at http://cse512-16s.github.io/a3-collnwalkr-chungbung22-lupuppy/ or download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
 
 ## Story Board
