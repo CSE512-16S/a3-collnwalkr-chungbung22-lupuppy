@@ -40,7 +40,7 @@ https://github.com/CSE512-16S/a3-collnwalkr-chungbung22-lupuppy/files/245912/sto
 
 ### Changes between Storyboard and the Final Implementation
 
-The majority of the implementation stays consistent with the storyboard. The main difference is the legend We initially decided to make the region part of the visualization(instead of creating legend). However, after a few fails, we decided to use the legend instead. 
+The majority of the implementation stays consistent with the storyboard. The main difference is the legend. We initially decided to make the region part of the visualization, which would be another layer added on top of the circular visualization. This would provide users with the ability to first hover over the outer region to view each region, then hover towards the inner region, to view the data on the state level. However, we had difficulty deciding on the optimal color and size for the outer region, as it increased the cognitive load of an already busy data visualization. As a result, we decided to use a legend instead. 
 
 We made the legend interactive: when users hover over each region, data that is related to the legend will light up.
 
