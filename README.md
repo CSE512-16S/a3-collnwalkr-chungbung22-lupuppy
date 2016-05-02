@@ -33,13 +33,17 @@ Put either your storyboard content or a [link to your storyboard pdf file](story
 
 ### Changes between Storyboard and the Final Implementation
 
-A paragraph explaining changes between the storyboard and the final implementation.
+The majority of the implementation stays consistent with the storyboard. The main difference is the legend We initially decided to make the region part of the visualization(instead of creating legend). However, after a few fails, we decided to use the legend instead. 
 
 
 ## Development Process
 
-Include:
-- Breakdown of how the work was split among the group members.
-- A commentary on the development process, including answers to the following questions:
-  - Roughly how much time did you spend developing your application?
-  - What aspects took the most time?
+SET UP: 
+After deciding the data source and the visualization format, Collin cleaned up the migration population excel sheet(1 hour). Xinglu downloaded and organized the assets from the Uber example(1 hour). We studied the example and produced a JSON file that records all the population outflow from one state to another(1 hour).
+ADDING DATA:
+We added the state and the migration population to the visualization. The initial graph looks like this:
+We tested the graph with original data. However, the data in the graph did not match the actual data. It turned out that one line of the data was overlooked(1 hour).
+VISUALIZE:
+At this stage, Chris worked on adding text for each State (1 hour). He moved the state name to the outside of the circle for better view. He also updated the tooltips to display change in population and current number of residents in the selected state. Collin and Xinglu worked on the color. For best information presentation, we limited the color to five. Each of the five colors represents a region of the U.S (i.e. Pacific). 
+The hardest part is prepare the JSON file for the visualization. Chris and Collin spent lots of time rearrange the States on the excel file so that States from the same region could stay together. (2 hour) Then Collin transformed it into JSON file(2 hours). 
+Finally, Chris added the legend. (1 hour) Xinglu and Collin spent sometime to decide how to group the regions. Collin used the selection method to make the legend interactive -- users could click the legend to view population outflow within one region. (1 hour)
