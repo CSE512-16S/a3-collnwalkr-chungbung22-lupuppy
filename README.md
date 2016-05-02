@@ -8,7 +8,7 @@
 2. Christopher Chung (chungbung22)
 3. Xinglu Yao (lupuppy)
 
-## Project Name
+## Project Name - Population Migration from State to State 2014-2015
 
 ![Thumbnail](thumbnail.png)
 
@@ -17,14 +17,7 @@ This is an example repository for your assignment 3 submission.
 
 
 ## Running Instructions
-
-Put your running instructions here. (Tell us how to run your visualization.)
-
-If your visualization is web-based,  it would be great if your submission can be opened online. [Github Pages](http://pages.github.com/) is a good and easy way to put your visualization online so you can put your link here.  For example:
-
-Access our visualization at http://cse512-16s.github.io/a3-jheer-mcorrell-jhoffs/ or download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
-
-If you put your work online, please also write a [one-line description and add a link to your final work](http://note.io/1n3u46s) so people can access it directly from the CSE512-16S page.
+Access our visualization at http://cse512-16s.github.io/a3-collnwalkr-chungbung22-lupuppy/ or download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
 
 ## Story Board
 
@@ -47,3 +40,10 @@ VISUALIZE:
 At this stage, Chris worked on adding text for each State (1 hour). He moved the state name to the outside of the circle for better view. He also updated the tooltips to display change in population and current number of residents in the selected state. Collin and Xinglu worked on the color. For best information presentation, we limited the color to five. Each of the five colors represents a region of the U.S (i.e. Pacific). 
 The hardest part is prepare the JSON file for the visualization. Chris and Collin spent lots of time rearrange the States on the excel file so that States from the same region could stay together. (2 hour) Then Collin transformed it into JSON file(2 hours). 
 Finally, Chris added the legend. (1 hour) Xinglu and Collin spent sometime to decide how to group the regions. Collin used the selection method to make the legend interactive -- users could click the legend to view population outflow within one region. (1 hour)
+
+## Sources
+Source:
+1.) http://www.census.gov/hhes/migration/data/acs/state-to-state.html
+2.) https://bost.ocks.org/mike/uberdata/
+3.) http://circos.ca/guide/tables/
+
