@@ -10,11 +10,9 @@
 
 ## Project Name - Population Migration from State to State 2014-2015
 
-![Thumbnail](thumbnail.png)
+We chose the state to state migration flows as our source data. The data is fairly simple: For each state, it shows how many people moved out of that state after a year. We decided to use chord graph for three reasons: first, chord graph visualize interactions among states within a complicated network(there are fifty states we need to visualize); second, chord graph is an effective way to visualize the size of the population; finally, chord graph can express a large amount of information within a condensed visualization (less data ink).  
 
-This is an example repository for your assignment 3 submission.
-(Put your a brief description of your final interactive visualization application and your dataset here.)
-
+Then, using existing Chord map example, we sketched out key aspects of our visualization on paper.
 
 ## Running Instructions
 Access our visualization at http://cse512-16s.github.io/a3-collnwalkr-chungbung22-lupuppy/ or download this repository and run `python -m SimpleHTTPServer 9000` and access this from http://localhost:9000/.
@@ -22,6 +20,14 @@ Access our visualization at http://cse512-16s.github.io/a3-collnwalkr-chungbung2
 ## Story Board
 
 Put either your storyboard content or a [link to your storyboard pdf file](storyboard.pdf?raw=true) here. Just like A2, you can use any software to create a *reasonable* pdf storyboard.
+
+1. Using the thickness of the line to visualize size of the population outflow. 
+2. Larger population has thicker lines.
+3. Tooltips show detailed numeric information. When mouse over the name of the State, tooltip shows number of residents in current state and how many people moving out of the state. When mouse over a certain path, the tooltip shows the detailed population outflow information(i.e. Texas to Alaska, 1000; Alask to Texas, 200).
+4. When the mouse is out of the visualization, all the population outflow information is visible.
+5. When hover outside of the circle, it would highlight the region(i.e. west) as well as the corresponding states. In that way, we could visualize the flow of a certain region. 
+6. When hover certain state, it shows population outflow of that state.
+7. The region is color-coded. There are five regions in total.
 
 
 ### Changes between Storyboard and the Final Implementation
@@ -45,9 +51,7 @@ Finally, Chris added the legend. (1 hour) Xinglu and Collin spent sometime to de
 
 ## Sources
 
-1.) http://www.census.gov/hhes/migration/data/acs/state-to-state.html
-
-2.) https://bost.ocks.org/mike/uberdata/
-
-3.) http://circos.ca/guide/tables/
+1. http://www.census.gov/hhes/migration/data/acs/state-to-state.html
+2. https://bost.ocks.org/mike/uberdata/
+3. http://circos.ca/guide/tables/
 
