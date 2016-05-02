@@ -55,7 +55,7 @@ We tested the graph with original data. However, the data in the graph did not m
 
 VISUALIZE:
 At this stage, Chris worked on adding text for each State (1.5 hour). He moved the state name to the outside of the circle for better view. He also updated the tooltips to display change in population and current number of residents in the selected state. Collin and Xinglu worked on the color. For best information presentation, we limited the color to five. Each of the five colors represents a region of the U.S (i.e. Pacific). (1 hour)
-The hardest part is prepare the JSON file for the visualization. Chris and Collin spent lots of time rearrange the States on the excel file so that States from the same region could stay together. Then Collin transformed it into JSON file(2 hours). 
+The hardest part is prepare the JSON file for the visualization. Chris and Collin spent lots of time rearrange the States on the excel file so that States from the same region could stay together. Then Collin transformed it into JSON file. (2 hours)
 Finally, Chris added the legend. (1 hour) Xinglu and Collin spent sometime to decide how to group the regions. Collin used the selection method to make the legend interactive -- users could click the legend to view population outflow within one region. (1.5 hour)
 
 ## Limitations:
