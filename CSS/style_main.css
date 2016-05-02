@@ -4,12 +4,13 @@ html {
 }
 
 body {
-  background: #212121;
+  background: #2E2E2E;
   color: #f9f9f9;
-  font-family: "Arial", serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   margin: 1em auto 4em auto;
   position: relative;
   width: 960px;
+  font-weight: lighter;
 }
 
 h1 {
@@ -61,7 +62,7 @@ a:not(:hover) {
 }
 
 svg {
-  font: 10px sans-serif;
+  font-size: 12px;
 }
 
 #circle circle {
@@ -87,10 +88,10 @@ path.chord {
   cursor:pointer;
 }
 
-.legend { list-style: none; }
-.legend li { float: left; margin-right: 10px; }
+.legend { list-style: none; display: inline; float: left;}
+.legend li {margin-right: 4px; margin: 6px;}
 .legend li:hover { cursor:pointer; }
-.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px;margin-right: 4px;}
 .legend .northeast { background-color: #2c7bb6; }
 .legend .southeast { background-color: #d7191c; }
 .legend .southwest { background-color: #abd9e9; }
