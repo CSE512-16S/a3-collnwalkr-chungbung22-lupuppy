@@ -1,8 +1,8 @@
 format = d3.format(',');
 
-var width = 800,
-    height = 800,
-    outerRadius = Math.min(width, height) / 2 - 70,
+var width = 730,
+    height = 730,
+    outerRadius = Math.min(width, height) / 2 - 80,
     innerRadius = outerRadius - 18;
 
 
@@ -55,7 +55,7 @@ function ready(error, states, matrix) {
   var groupPath = group.append("path")
       .attr("id", function(d, i) { return "group" + i; })
       .attr("d", arc)
-      .style("fill", function(d, i) { return states[i].color; });
+      .style("fill", function(d, i) {return states[i].color; });
 
   // Add a text label.
   group.append("text")
