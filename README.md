@@ -24,6 +24,8 @@ Access our visualization at http://cse512-16s.github.io/a3-collnwalkr-chungbung2
 Put either your storyboard content or a [link to your storyboard pdf file](storyboard.pdf?raw=true) here. Just like A2, you can use any software to create a *reasonable* pdf storyboard.
 We Started off sketching key concepts on paper:
 
+[data viz.pdf](https://github.com/CSE512-16S/a3-collnwalkr-chungbung22-lupuppy/files/245907/data.viz.pdf)
+
 1. Using the thickness of the line to visualize size of the population outflow. 
 2. Larger population has thicker lines.
 3. Tooltips show detailed numeric information. When mouse over the name of the State, tooltip shows number of residents in current state and how many people moving out of the state. When mouse over a certain path, the tooltip shows the detailed population outflow information(i.e. Texas to Alaska, 1000; Alask to Texas, 200).
@@ -33,6 +35,8 @@ We Started off sketching key concepts on paper:
 7. The region is color-coded. There are five regions in total.
 
 Then we went off and prototyped on D3.js:
+
+https://github.com/CSE512-16S/a3-collnwalkr-chungbung22-lupuppy/files/245912/story_board_2.pdf
 
 ### Changes between Storyboard and the Final Implementation
 
