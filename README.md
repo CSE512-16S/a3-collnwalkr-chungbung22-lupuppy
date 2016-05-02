@@ -8,7 +8,7 @@
 2. Christopher Chung (chungbung22)
 3. Xinglu Yao (lupuppy)
 
-## Project Name - Population Migration from State to State 2014-2015
+## Project Name - Population Outflow from State to State 2014-2015
 
 (Put your a brief description of your final interactive visualization application and your dataset here.)
 
@@ -22,6 +22,7 @@ Access our visualization at http://cse512-16s.github.io/a3-collnwalkr-chungbung2
 ## Story Board
 
 Put either your storyboard content or a [link to your storyboard pdf file](storyboard.pdf?raw=true) here. Just like A2, you can use any software to create a *reasonable* pdf storyboard.
+We Started off sketching key concepts on paper:
 
 1. Using the thickness of the line to visualize size of the population outflow. 
 2. Larger population has thicker lines.
@@ -31,10 +32,13 @@ Put either your storyboard content or a [link to your storyboard pdf file](story
 6. When hover certain state, it shows population outflow of that state.
 7. The region is color-coded. There are five regions in total.
 
+Then we went off and prototyped on D3.js:
 
 ### Changes between Storyboard and the Final Implementation
 
 The majority of the implementation stays consistent with the storyboard. The main difference is the legend We initially decided to make the region part of the visualization(instead of creating legend). However, after a few fails, we decided to use the legend instead. 
+
+We made the legend interactive: when users hover over each region, data that is related to the legend will light up.
 
 
 ## Development Process
@@ -43,13 +47,17 @@ SET UP:
 After deciding the data source and the visualization format, Collin cleaned up the migration population excel sheet(1 hour). Xinglu downloaded and organized the assets from the Uber example(1 hour). We studied the example and produced a JSON file that records all the population outflow from one state to another(1 hour).
 
 ADDING DATA:
-We added the state and the migration population to the visualization. The initial graph looks like this:
+Chris added the state and the migration population to the visualization. 
 We tested the graph with original data. However, the data in the graph did not match the actual data. It turned out that one line of the data was overlooked(1 hour).
 
 VISUALIZE:
-At this stage, Chris worked on adding text for each State (1 hour). He moved the state name to the outside of the circle for better view. He also updated the tooltips to display change in population and current number of residents in the selected state. Collin and Xinglu worked on the color. For best information presentation, we limited the color to five. Each of the five colors represents a region of the U.S (i.e. Pacific). 
-The hardest part is prepare the JSON file for the visualization. Chris and Collin spent lots of time rearrange the States on the excel file so that States from the same region could stay together. (2 hour) Then Collin transformed it into JSON file(2 hours). 
-Finally, Chris added the legend. (1 hour) Xinglu and Collin spent sometime to decide how to group the regions. Collin used the selection method to make the legend interactive -- users could click the legend to view population outflow within one region. (1 hour)
+At this stage, Chris worked on adding text for each State (1 hour). He moved the state name to the outside of the circle for better view. He also updated the tooltips to display change in population and current number of residents in the selected state. Collin and Xinglu worked on the color. For best information presentation, we limited the color to five. Each of the five colors represents a region of the U.S (i.e. Pacific). (1 hour)
+The hardest part is prepare the JSON file for the visualization. Chris and Collin spent lots of time rearrange the States on the excel file so that States from the same region could stay together. Then Collin transformed it into JSON file(2 hours). 
+Finally, Chris added the legend. (1 hour) Xinglu and Collin spent sometime to decide how to group the regions. Collin used the selection method to make the legend interactive -- users could click the legend to view population outflow within one region. (1.5 hour)
+
+## Limitations:
+1. Each chord represents the population outflow of two states. However, we only used one color. This might cause confusion to some viewers.
+2. To make the region legend interactive, we attached a region class(i.e. west) to each chord. However, some chords are associated with two regions. Hence, our visualization loses some data if the user hover over the region legend.
 
 ## Sources
 
