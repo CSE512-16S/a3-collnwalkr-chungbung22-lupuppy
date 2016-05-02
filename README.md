@@ -4,7 +4,7 @@
 
 ## Team Members
 
-1. Colin Walker (collnwalkr)
+1. Collin Walker (collnwalkr)
 2. Christopher Chung (chungbung22)
 3. Xinglu Yao (lupuppy)
 
